@@ -7,6 +7,7 @@ excerpt: 'This paper proposes a Visual, Vertical, and Verifiable Benchmark for M
 date: 2026-02-01
 venue: 'arXiv'
 paperurl: 'https://arxiv.org/abs/2602.12876'
+authors: 'Huanyao Zhang, Jiepeng Zhou, Bo Li, Bowen Zhou, Yanzhe Shan, Haishan Lu, Zhiyong Cao, Jiaoyang Chen, Yuqian Han, **Zinan Sheng**, Zhengwei Tao, Hao Liang, et al.'
 citation: 'Huanyao Zhang, Jiepeng Zhou, Bo Li, Bowen Zhou, Yanzhe Shan, Haishan Lu, Zhiyong Cao, Jiaoyang Chen, Yuqian Han, Zinan Sheng, et al. "BrowseComp-V³: A Visual, Vertical, and Verifiable Benchmark for Multimodal Browsing Agents." arXiv preprint arXiv:2602.12876 (2026).'
 ---
 

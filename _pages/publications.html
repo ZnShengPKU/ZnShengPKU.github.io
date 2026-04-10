@@ -11,26 +11,17 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
+<ul>
   {% for post in site.publications reversed %}
-    {% include archive-single.html %}
+    <li style="margin-bottom: 1.5rem;">
+      <strong>{{ post.title }}</strong><br>
+      {{ post.authors | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}<br>
+      In <i>{{ post.venue }}</i> {{ post.date | date: "%Y" }}. 
+      {% if post.paperurl %}[<a href="{{ post.paperurl }}">Download paper</a>]{% endif %}
+      {% if post.codeurl %}[<a href="{{ post.codeurl }}">code</a>]{% endif %}
+    </li>
   {% endfor %}
-{% endif %}
+</ul>
 
 
 

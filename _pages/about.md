@@ -12,6 +12,10 @@ I am currently researching **LLMs/MLLMs architecture and training algorithm** un
 
 ## Publications
 
-* **BrowseComp-V³: A Visual, Vertical, and Verifiable Benchmark for Multimodal Browsing Agents**<br>
-  Huanyao Zhang, Jiepeng Zhou, Bo Li, Bowen Zhou, Yanzhe Shan, Haishan Lu, Zhiyong Cao, Jiaoyang Chen, Yuqian Han, **Zinan Sheng**, Zhengwei Tao, Hao Liang, et al.<br>
-  [arXiv:2602.12876](https://arxiv.org/abs/2602.12876)
+<ul>
+  <li style="margin-bottom: 1.5rem;">
+    <strong>BrowseComp-V³: A Visual, Vertical, and Verifiable Benchmark for Multimodal Browsing Agents</strong><br>
+    Huanyao Zhang, Jiepeng Zhou, Bo Li, Bowen Zhou, Yanzhe Shan, Haishan Lu, Zhiyong Cao, Jiaoyang Chen, Yuqian Han, <strong>Zinan Sheng</strong>, Zhengwei Tao, Hao Liang, et al.<br>
+    In <i>arXiv</i> 2026. [<a href="https://arxiv.org/abs/2602.12876">Download paper</a>]
+  </li>
+</ul>
