@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Zinan Sheng, an undergraduate student at Peking University, School of EECS.<br> 
+Hi👋, I'm Zinan Sheng(盛子楠), an undergraduate student at Peking University, School of EECS.<br> 
 I am currently researching **LLMs/MLLMs architecture and training algorithm** under the supervision of Prof. Ge Li.
 
 ## Publications
