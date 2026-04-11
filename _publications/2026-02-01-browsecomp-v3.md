@@ -7,13 +7,13 @@ excerpt: 'This paper proposes a Visual, Vertical, and Verifiable Benchmark for M
 date: 2026-02-01
 venue: 'arXiv'
 paperurl: 'https://arxiv.org/abs/2602.12876'
-authors: 'Huanyao Zhang, Jiepeng Zhou, Bo Li, Bowen Zhou, Yanzhe Shan, Haishan Lu, Zhiyong Cao, Jiaoyang Chen, Yuqian Han, **Zinan Sheng**, Zhengwei Tao, Hao Liang, et al.'
-citation: 'Huanyao Zhang, Jiepeng Zhou, Bo Li, Bowen Zhou, Yanzhe Shan, Haishan Lu, Zhiyong Cao, Jiaoyang Chen, Yuqian Han, Zinan Sheng, et al. "BrowseComp-V³: A Visual, Vertical, and Verifiable Benchmark for Multimodal Browsing Agents." arXiv preprint arXiv:2602.12876 (2026).'
+authors: 'Huanyao Zhang, Jiepeng Zhou, Bo Li, Bowen Zhou, Yanzhe Shan, Haishan Lu, Zhiyong Cao, Jiaoyang Chen, Yuqian Han, **Zinan Sheng**, Zhengwei Tao, Hao Liang, Jialong Wu, Yang Shi, Yuanpeng He, Jiaye Lin, Qintong Zhang, Guochen Yan, Runhao Zhao, Zhengpin Li, Xiaohan Yu, Lang Mei, Chong Chen, Wentao Zhang, Bin Cui'
+citation: 'Huanyao Zhang, Jiepeng Zhou, Bo Li, Bowen Zhou, Yanzhe Shan, Haishan Lu, Zhiyong Cao, Jiaoyang Chen, Yuqian Han, Zinan Sheng, Zhengwei Tao, Hao Liang, Jialong Wu, Yang Shi, Yuanpeng He, Jiaye Lin, Qintong Zhang, Guochen Yan, Runhao Zhao, Zhengpin Li, Xiaohan Yu, Lang Mei, Chong Chen, Wentao Zhang, Bin Cui. "BrowseComp-V³: A Visual, Vertical, and Verifiable Benchmark for Multimodal Browsing Agents." arXiv preprint arXiv:2602.12876 (2026).'
 ---
 
 [Download paper here](https://arxiv.org/pdf/2602.12876)
 
-**Authors:** Huanyao Zhang, Jiepeng Zhou, Bo Li, Bowen Zhou, Yanzhe Shan, Haishan Lu, Zhiyong Cao, Jiaoyang Chen, Yuqian Han, Zinan Sheng, Zhengwei Tao, Hao Liang, et al.
+**Authors:** Huanyao Zhang*, Jiepeng Zhou*, Bo Li*, Bowen Zhou*, Yanzhe Shan*, Haishan Lu, Zhiyong Cao, Jiaoyang Chen, Yuqian Han, Zinan Sheng, Zhengwei Tao, Hao Liang, Jialong Wu, Yang Shi, Yuanpeng He, Jiaye Lin, Qintong Zhang, Guochen Yan, Runhao Zhao, Zhengpin Li, Xiaohan Yu, Lang Mei, Chong Chen, Wentao Zhang, Bin Cui.
 
 **Abstract:**
 BrowseComp-V³ proposes a Visual, Vertical, and Verifiable Benchmark for Multimodal Browsing Agents.

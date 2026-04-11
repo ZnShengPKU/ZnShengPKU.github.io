@@ -7,15 +7,19 @@ redirect_from:
   - /about.html
 ---
 
-Hi👋, I'm Zinan Sheng(盛子楠), an undergraduate student at Peking University, School of EECS.<br> 
+Zinan Sheng, an undergraduate student at Peking University, School of EECS.<br> 
 I am currently researching **LLMs/MLLMs architecture and training algorithm** under the supervision of Prof. Ge Li.
 
 ## Publications
 
 <ul>
-  <li style="margin-bottom: 1.5rem;">
-    <strong>BrowseComp-V³: A Visual, Vertical, and Verifiable Benchmark for Multimodal Browsing Agents</strong><br>
-    Huanyao Zhang, Jiepeng Zhou, Bo Li, Bowen Zhou, Yanzhe Shan, Haishan Lu, Zhiyong Cao, Jiaoyang Chen, Yuqian Han, <strong>Zinan Sheng</strong>, Zhengwei Tao, Hao Liang, et al.<br>
-    In <i>arXiv</i> 2026. [<a href="https://arxiv.org/abs/2602.12876">Download paper</a>]
-  </li>
+  {% for post in site.publications reversed %}
+    <li style="margin-bottom: 1.5rem;">
+      <strong>{{ post.title }}</strong><br>
+      {{ post.authors | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}<br>
+      In <i>{{ post.venue }}</i> {{ post.date | date: "%Y" }}. 
+      {% if post.paperurl %}[<a href="{{ post.paperurl }}">Download paper</a>]{% endif %}
+      {% if post.codeurl %}[<a href="{{ post.codeurl }}">code</a>]{% endif %}
+    </li>
+  {% endfor %}
 </ul>
