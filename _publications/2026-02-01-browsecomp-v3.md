@@ -13,7 +13,7 @@ citation: 'Huanyao Zhang, Jiepeng Zhou, Bo Li, Bowen Zhou, Yanzhe Shan, Haishan 
 
 [Download paper here](https://arxiv.org/pdf/2602.12876)
 
-**Authors:** Huanyao Zhang*, Jiepeng Zhou*, Bo Li*, Bowen Zhou*, Yanzhe Shan*, Haishan Lu, Zhiyong Cao, Jiaoyang Chen, Yuqian Han, Zinan Sheng, Zhengwei Tao, Hao Liang, Jialong Wu, Yang Shi, Yuanpeng He, Jiaye Lin, Qintong Zhang, Guochen Yan, Runhao Zhao, Zhengpin Li, Xiaohan Yu, Lang Mei, Chong Chen, Wentao Zhang, Bin Cui.
+**Authors:** Huanyao Zhang\*, Jiepeng Zhou\*, Bo Li\*, Bowen Zhou\*, Yanzhe Shan\*, Haishan Lu, Zhiyong Cao, Jiaoyang Chen, Yuqian Han, Zinan Sheng, Zhengwei Tao, Hao Liang, Jialong Wu, Yang Shi, Yuanpeng He, Jiaye Lin, Qintong Zhang, Guochen Yan, Runhao Zhao, Zhengpin Li, Xiaohan Yu, Lang Mei, Chong Chen, Wentao Zhang, Bin Cui.
 
 **Abstract:**
 BrowseComp-V³ proposes a Visual, Vertical, and Verifiable Benchmark for Multimodal Browsing Agents.
