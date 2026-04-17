@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 👋Hi, I'm Zinan Sheng, currently undergraduate at Peking University, School of EECS.<br> 
-I am currently researching **LLMs/MLLMs architecture and training algorithm** under the supervision of Prof. Ge Li.
+I am currently researching **LLMs/MLLMs architecture and learning algorithm** under the supervision of Prof. Ge Li.
 
 ## Publications
 
