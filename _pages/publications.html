@@ -11,17 +11,38 @@ author_profile: true
 
 {% include base_path %}
 
-<ul>
-  {% for post in site.publications reversed %}
-    <li style="margin-bottom: 1.5rem;">
-      <strong>{{ post.title }}</strong><br>
-      {{ post.authors | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}<br>
-      In <i>{{ post.venue }}</i> {{ post.date | date: "%Y" }}. 
-      {% if post.paperurl %}[<a href="{{ post.paperurl }}">Download paper</a>]{% endif %}
-      {% if post.codeurl %}[<a href="{{ post.codeurl }}">code</a>]{% endif %}
-    </li>
-  {% endfor %}
-</ul>
+{% assign preprints = site.publications | where: "category", "preprints" %}
+{% assign publications = site.publications | where_exp: "item", "item.category != 'preprints'" %}
+
+{% if preprints.size > 0 %}
+  <h2>Preprints</h2>
+  <ul>
+    {% for post in preprints reversed %}
+      <li style="margin-bottom: 1.5rem;">
+        <strong>{{ post.title }}</strong><br>
+        {{ post.authors | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}<br>
+        In <i>{{ post.venue }}</i> {{ post.date | date: "%Y" }}. 
+        {% if post.paperurl %}[<a href="{{ post.paperurl }}">Download paper</a>]{% endif %}
+        {% if post.codeurl %}[<a href="{{ post.codeurl }}">code</a>]{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+{% if publications.size > 0 %}
+  <h2>Publications</h2>
+  <ul>
+    {% for post in publications reversed %}
+      <li style="margin-bottom: 1.5rem;">
+        <strong>{{ post.title }}</strong><br>
+        {{ post.authors | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}<br>
+        In <i>{{ post.venue }}</i> {{ post.date | date: "%Y" }}. 
+        {% if post.paperurl %}[<a href="{{ post.paperurl }}">Download paper</a>]{% endif %}
+        {% if post.codeurl %}[<a href="{{ post.codeurl }}">code</a>]{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
 
 
 

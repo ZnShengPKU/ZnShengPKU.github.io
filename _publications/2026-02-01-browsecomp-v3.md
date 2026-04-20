@@ -1,7 +1,7 @@
 ---
 title: "BrowseComp-V³: A Visual, Vertical, and Verifiable Benchmark for Multimodal Browsing Agents"
 collection: publications
-category: manuscripts
+category: preprints
 permalink: /publication/2026-02-01-browsecomp-v3
 excerpt: 'This paper proposes a Visual, Vertical, and Verifiable Benchmark for Multimodal Browsing Agents.'
 date: 2026-02-01
