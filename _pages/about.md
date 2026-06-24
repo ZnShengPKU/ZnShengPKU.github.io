@@ -7,8 +7,8 @@ redirect_from:
   - /about.html
 ---
 
-👋Hi, I'm Zinan Sheng, currently undergraduate at Peking University, School of EECS.<br> 
-I am currently researching **LLMs/MLLMs architecture and learning algorithm** under the supervision of Prof. Ge Li.
+Hi, I’m Zinan Sheng(盛子楠), an undergraduate at Peking University’s School of EECS, Class of 2029. I work with Prof. Ge Li on large language models, focusing on model architecture, training methods, and data synthesis.
+I’m also a research intern at Unipat AI, where I explore data synthesis for coding.
 
 {% assign preprints = site.publications | where: "category", "preprints" %}
 {% assign publications = site.publications | where_exp: "item", "item.category != 'preprints'" %}
