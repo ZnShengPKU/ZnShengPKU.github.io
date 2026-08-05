@@ -1,0 +1,24 @@
+{% comment %}
+  Renders one publication entry as a card.
+  Usage: {% include publication-card.html post=post %}
+  Expects post front matter: title, authors, venue, date, category, paperurl, codeurl.
+  The badge fill encodes status: outlined = preprint, solid = published.
+{% endcomment %}
+{% assign post = include.post %}
+<article class="pub-card">
+  <h3 class="pub-card__title">
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </h3>
+  <p class="pub-card__authors">{{ post.authors | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}</p>
+  <div class="pub-card__footer">
+    {% if post.category == 'preprints' %}
+      <span class="pub-badge pub-badge--preprint">{{ post.venue }} · {{ post.date | date: "%Y" }}</span>
+    {% else %}
+      <span class="pub-badge pub-badge--published">{{ post.venue }} · {{ post.date | date: "%Y" }}</span>
+    {% endif %}
+    <span class="pub-card__links">
+      {% if post.paperurl %}<a class="pub-pill" href="{{ post.paperurl }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+      {% if post.codeurl %}<a class="pub-pill" href="{{ post.codeurl }}" target="_blank" rel="noopener">Code</a>{% endif %}
+    </span>
+  </div>
+</article>

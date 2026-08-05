@@ -2,7 +2,7 @@
 permalink: /
 title: "About Me"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
@@ -16,31 +16,19 @@ I’m also a research intern at Unipat AI, where I explore data synthesis for co
 {% if preprints.size > 0 %}
 ## Preprints
 
-<ul>
+<div class="pub-list">
   {% for post in preprints reversed %}
-    <li style="margin-bottom: 1.5rem;">
-      <strong>{{ post.title }}</strong><br>
-      {{ post.authors | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}<br>
-      In <i>{{ post.venue }}</i> {{ post.date | date: "%Y" }}. 
-      {% if post.paperurl %}[<a href="{{ post.paperurl }}">Download paper</a>]{% endif %}
-      {% if post.codeurl %}[<a href="{{ post.codeurl }}">code</a>]{% endif %}
-    </li>
+    {% include publication-card.html post=post %}
   {% endfor %}
-</ul>
+</div>
 {% endif %}
 
 {% if publications.size > 0 %}
 ## Publications
 
-<ul>
+<div class="pub-list">
   {% for post in publications reversed %}
-    <li style="margin-bottom: 1.5rem;">
-      <strong>{{ post.title }}</strong><br>
-      {{ post.authors | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}<br>
-      In <i>{{ post.venue }}</i> {{ post.date | date: "%Y" }}. 
-      {% if post.paperurl %}[<a href="{{ post.paperurl }}">Download paper</a>]{% endif %}
-      {% if post.codeurl %}[<a href="{{ post.codeurl }}">code</a>]{% endif %}
-    </li>
+    {% include publication-card.html post=post %}
   {% endfor %}
-</ul>
+</div>
 {% endif %}
