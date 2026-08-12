@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi, I’m Zinan Sheng(盛子楠), an undergraduate at Peking University. I work with Prof. Ge Li on training methods for large language models.
+Hi, I’m Zinan Sheng(盛子楠), an undergraduate at Peking University. I work with Prof. Ge Li on post-training methods for large language models.
 
 {% if site.data.education.size > 0 %}
 ## Education
