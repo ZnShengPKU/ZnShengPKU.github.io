@@ -1,0 +1,13 @@
+# Experience entries for the Experience section on the main page.
+# Fields: org, role, period (required); detail, icon (optional).
+# Oldest first — the page renders this list reversed, so the newest role is on top.
+- org: Peking University, School of EECS
+  role: Undergraduate researcher with Prof. Ge Li
+  detail: Large language models — model architecture, training methods, data synthesis
+  period: Aug 2025 – present
+  icon: fa-solid fa-flask
+- org: Unipat AI
+  role: Research intern
+  detail: Data synthesis for coding
+  period: Jul 2026 – present
+  icon: fa-solid fa-building

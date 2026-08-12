@@ -1,0 +1,78 @@
+/* ==========================================================================
+   EDUCATION & EXPERIENCE CARDS
+   Card-style entries for the Education and Experience sections on the main
+   page. Shares its surface with the publication cards via %card-surface, so
+   the two card types stay consistent. All colors resolve through the theme's
+   CSS custom properties, so every skin and dark mode keep working.
+   The period pill is outlined only — the publication badges encode status
+   through fill, and nothing here should compete with that.
+   ========================================================================== */
+
+.xp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-bottom: 2rem;
+}
+
+.xp-card {
+  @extend %card-surface;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  padding: 0.95rem 1.1rem;
+
+  .xp-card__icon {
+    flex: none;
+    width: 1.2rem;
+    margin-top: 0.25rem;
+    color: var(--global-base-color);
+    font-size: 0.95em;
+    text-align: center;
+  }
+
+  .xp-card__body {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .xp-card__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.2rem 1rem;
+  }
+
+  .xp-card__org {
+    font-size: 1.05em;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .xp-card__role {
+    margin: 0.15rem 0 0;
+    font-size: 0.9em;
+    line-height: 1.6;
+  }
+
+  .xp-card__detail {
+    margin: 0.15rem 0 0;
+    color: var(--global-fig-caption-color);
+    font-size: 0.85em;
+    line-height: 1.6;
+  }
+}
+
+.xp-card__period {
+  display: inline-block;
+  padding: 0.18em 0.7em;
+  border: 1px solid var(--global-dark-border-color);
+  border-radius: 999px;
+  color: var(--global-fig-caption-color);
+  font-size: 0.72em;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}

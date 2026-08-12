@@ -1,0 +1,19 @@
+{% comment %}
+  Renders one education or experience entry as a card.
+  Usage: {% include experience-card.html entry=entry %}
+  Expects entry fields: org, role, period (required); detail, icon (optional).
+  icon is a Font Awesome 6 class pair, e.g. "fa-solid fa-flask". It is decorative
+  and hidden from assistive tech, so every card's meaning stays in its text.
+{% endcomment %}
+{% assign entry = include.entry %}
+<article class="xp-card">
+  <i class="xp-card__icon {{ entry.icon | default: 'fa-solid fa-briefcase' }}" aria-hidden="true"></i>
+  <div class="xp-card__body">
+    <div class="xp-card__head">
+      <span class="xp-card__org">{{ entry.org }}</span>
+      <span class="xp-card__period">{{ entry.period }}</span>
+    </div>
+    <p class="xp-card__role">{{ entry.role | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}</p>
+    {% if entry.detail %}<p class="xp-card__detail">{{ entry.detail | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}</p>{% endif %}
+  </div>
+</article>
