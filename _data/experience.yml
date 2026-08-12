@@ -2,12 +2,6 @@
 # Fields: org, role, period (required); detail, logo, icon (optional).
 # logo wins over icon — see _data/education.yml for the full field notes.
 # Oldest first — the page renders this list reversed, so the newest role is on top.
-- org: Peking University
-  role: Undergraduate researcher with Prof. Ge Li, School of EECS
-  detail: Large language models — model architecture, training methods, data synthesis
-  period: Aug 2025 – present
-  logo: /images/logos/pku.png
-  icon: fa-solid fa-flask
 - org: Unipat AI
   role: Research intern
   detail: Data synthesis for coding
