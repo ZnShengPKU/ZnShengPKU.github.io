@@ -43,6 +43,7 @@ Hi, I’m Zinan Sheng(盛子楠), an undergraduate at Peking University. I work 
   {% for post in preprints reversed %}
     {% include publication-card.html post=post %}
   {% endfor %}
+  {% include pub-equal-note.html posts=preprints %}
 </div>
 {% endif %}
 
@@ -53,5 +54,6 @@ Hi, I’m Zinan Sheng(盛子楠), an undergraduate at Peking University. I work 
   {% for post in publications reversed %}
     {% include publication-card.html post=post %}
   {% endfor %}
+  {% include pub-equal-note.html posts=publications %}
 </div>
 {% endif %}

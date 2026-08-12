@@ -54,6 +54,23 @@
   }
 }
 
+/* Co-first-author legend, rendered under a list only when one of its entries
+   marks equal contribution. Deliberately quiet: it explains a marker rather
+   than competing with the entries themselves. */
+.pub-note {
+  margin: 0;
+  color: var(--global-fig-caption-color);
+  font-size: 0.78em;
+  line-height: 1.5;
+
+  /* sup defaults to ~0.8em of an already-small parent, which renders the marker
+     almost invisible. Bring it back up so it reads as the same mark used in the
+     author lists above. */
+  sup {
+    font-size: 0.95em;
+  }
+}
+
 .pub-badge {
   display: inline-block;
   padding: 0.18em 0.7em;

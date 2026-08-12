@@ -1,0 +1,15 @@
+{% comment %}
+  Renders the co-first-author legend for a publication list, but only when at
+  least one entry in that list actually marks equal contribution.
+  Usage: {% include pub-equal-note.html posts=preprints %}
+
+  Markers must be written as <sup>*</sup> in the entry's authors field — a bare
+  asterisk goes through markdownify, where the span between two of them risks
+  being read as emphasis. Bold is reserved for Zinan's own name, so a reader
+  scanning a long author list still has exactly one thing to look for.
+{% endcomment %}
+{% assign has_equal = false %}
+{% for post in include.posts %}
+  {% if post.authors contains '<sup>*</sup>' %}{% assign has_equal = true %}{% break %}{% endif %}
+{% endfor %}
+{% if has_equal %}<p class="pub-note"><sup>*</sup> Equal contribution.</p>{% endif %}
