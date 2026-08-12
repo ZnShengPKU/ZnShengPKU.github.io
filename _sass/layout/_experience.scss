@@ -31,6 +31,32 @@
     text-align: center;
   }
 
+  /* Organization mark. The tile is not decoration: several real logos are dark
+     strokes on transparency (Unipat AI's is black), which would vanish against
+     the dark theme. Seating every mark on the same light tile keeps them legible
+     in both themes and gives the marks equal visual weight despite differing
+     shapes — a round seal next to a bare glyph otherwise reads as inconsistent. */
+  .xp-card__logo {
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    margin-top: 0.1rem;
+    padding: 0.22rem;
+    border: 1px solid var(--global-border-color);
+    border-radius: 7px;
+    background: #fff;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
   .xp-card__body {
     flex: 1;
     min-width: 0;

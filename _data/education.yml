@@ -1,7 +1,10 @@
 # Education entries for the Education section on the main page.
-# Fields: org, role, period (required); detail, icon (optional).
-# icon is a Font Awesome 6 class pair, vendored in _sass/vendor/font-awesome/.
+# Fields: org, role, period (required); detail, logo, icon (optional).
+# logo wins over icon: a path under images/logos/, shown on a light tile so
+# dark marks stay visible in dark mode. icon is a Font Awesome 6 class pair
+# (vendored in _sass/vendor/font-awesome/) used only when logo is absent.
 - org: Peking University
   role: B.S. undergraduate, School of EECS
   period: Aug 2025 – Jun 2029 (expected)
+  logo: /images/logos/pku.png
   icon: fa-solid fa-graduation-cap
