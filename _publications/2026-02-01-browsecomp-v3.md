@@ -5,7 +5,7 @@ category: preprints
 permalink: /publication/2026-02-01-browsecomp-v3
 excerpt: 'This paper proposes a Visual, Vertical, and Verifiable Benchmark for Multimodal Browsing Agents.'
 date: 2026-02-01
-venue: 'arXiv'
+venue: 'arXiv (under review at NeurIPS)'
 paperurl: 'https://arxiv.org/pdf/2602.12876'
 codeurl: 'https://github.com/Halcyon-Zhang/BrowseComp-V3'
 blogurl: 'https://halcyon-zhang.github.io/BrowseComp-V3/'
